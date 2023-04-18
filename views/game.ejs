@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+  <h1>Rock Paper Scissors</h1>
+
+  <h2>
+    <%= player1Name %>
+  </h2>
+
+  <form action="/outcome" method="post">
+    <!--We can feed in the id below to reference for transfer to our score update on the browser-->
+    <fieldset id="player1Selection">
+      <legend>Player 1</legend>
+      <label>
+        <input type="radio" id="player1Selection" name="player1Selection" value="rock" required>
+        Rock
+      </label>
+      <label>
+        <input type="radio" id="player1Selection" name="player1Selection" value="paper" required>
+        Paper
+      </label>
+      <label>
+        <input type="radio" id="player1Selection" name="player1Selection" value="scissors" required>
+        Scissors
+      </label>
+      <label>
+        <input type="radio" id="player1Selection" name="player1Selection" value="lizard" required>
+        Lizard
+      </label>
+      <label>
+        <input type="radio" id="player1Selection" name="player1Selection" value="spock" required>
+        Spock
+      </label>
+    </fieldset>
+
+
+    <h2>
+      <%= player2Name %>
+    </h2>
+
+    <fieldset id="player2Selection">
+      <legend>Player 2</legend>
+      <label>
+        <input type="radio" id="player2Selection" name="player2Selection" value="rock" required>
+        Rock
+      </label>
+      <label>
+        <input type="radio" id="player2Selection" name="player2Selection" value="paper" required>
+        Paper
+      </label>
+      <label>
+        <input type="radio" id="player2Selection" name="player2Selection" value="scissors" required>
+        Scissors
+      </label>
+      <label>
+        <input type="radio" id="player2Selection" name="player2Selection" value="lizard" required>
+        Lizard
+      </label>
+      <label>
+        <input type="radio" id="player2Selection" name="player2Selection" value="spock" required>
+        Spock
+      </label>
+    </fieldset>
+
+    <button type="submit">Play</button>
+  </form>
+</body>
+
+</html>

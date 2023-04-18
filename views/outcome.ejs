@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Scores</title>
+</head>
+
+<body>
+  <h1> Scores on the Doors!</h1>
+
+  <h2>
+    <%= player1 %> chose <%= p1Choice %>
+  </h2>
+
+  <h2>
+    <%= player2 %> chose <%= p2Choice %>
+  </h2>
+
+  <h2>
+    <%= outcome %>
+  </h2>
+
+  <h2>
+    <%= p1Score %> : <%= p2Score %>
+  </h2>
+
+
+  <!--The below tags take the user to a new game or back to the route, where all will be reset.-->
+  <a id="play-again" href="/game">Play Again?</a>
+  <a id="reset" href="/">New Game</a>
+
+  <a id="turn-link" href="/game">next turn</a>
+</body>
+
+</html>
