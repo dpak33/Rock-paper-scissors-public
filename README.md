@@ -1,3 +1,5 @@
+A simple server-side rock-paper-scissors game. 
+
 cd level with src file to run. Npm i to install dependencies. 
 
 IMPORTANT: Requires supertest to run several of the tests. npm i supertest. It won't update the package.json file but will allow you to run the tests effectively afterwards! 
